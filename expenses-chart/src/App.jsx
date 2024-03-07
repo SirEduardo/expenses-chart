@@ -1,5 +1,7 @@
 import './App.css'
 
+
+
 function App() {
 
   return (
@@ -10,14 +12,26 @@ function App() {
         <p  className='balance'>$921.48</p>
         </div>
         <div className='dots-box'>
-        <div className='white-circle'></div>
-        <div className='black-circle'></div>
+        <img src='../images/logo.svg' alt='logo'></img>
         </div>
       </header>
       <article>
         <h1>Spending-Last 7 days</h1>
-       
+       <div className='chart'>
+        
+       </div>
+        <footer>
+        <div className='total'>
+          <p>Total this month</p>
+          <strong>$478.33</strong>
+        </div>
+        <div className='last'>
+          <strong>+2.4%</strong>
+          <p>from last month</p>
+        </div>
+        </footer>
       </article>
+      
     </div>
   )
 }

@@ -1,31 +1,10 @@
 import { Bar } from "react-chartjs-2";
 
-import{
-    chart as chartjs,
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-    Filler,
-} from 'chart.js';
 
-chartjs.register(
-    CategoryScale,
-    LinearScale,
-    PointElement,
-    BarElement,
-    Title,
-    Tooltip,
-    Legend,
-    Filler
-);
 const beneficios = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48];
 const meses = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
 
-const miData = {
+const chartData = {
     labels: meses,
     datasets: [
         {
@@ -34,8 +13,9 @@ const miData = {
         }
     ]
 }
-const misOptions = {
-    resposive : true,
+
+const chartOptions = {
+    responsive : true,
     animation : false,
     plugins : {
         legend :{
@@ -52,6 +32,7 @@ const misOptions = {
         }
     }
 }
-export default function Bars(){
-    return <Bar data = {miData} options={misOptions}/>
+
+export default function Bars() {
+    return <Bar data = {chartData} options={chartOptions}/>
 }

@@ -38,26 +38,40 @@ header{
     display: flex;
     align-items: center;
 }
-.white-circle{
-    width: 40px;
-    height: 40px;
-    border: 2px solid #fff;
-    border-radius: 50%;
-    background-color: transparent;
-   
-}
-
-.black-circle{
-    width: 42px;
-    height: 42px;
-    background-color: var(--Darkbrown);
-    border-radius: 50%;
-
-}
 article{
     margin-top: 20px;
     padding: 0px 40px;
     width: 36rem;
     border-radius: 15px;
     background: #fff;
+}
+h1{
+    color: var(--Darkbrown);
+}
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid grey;
+    padding: 20px;
+}
+.total{
+    padding-bottom: 20px;
+}
+.total strong{
+    font-size: 40px;
+    color: var(--Darkbrown);
+}
+.total p{
+    color: var(--Mediumbrown);
+}
+
+.last strong{
+    color: var(--Darkbrown);
+    font-size: 22px;
+
+}
+.last p{
+    color: var(--Mediumbrown);
+
 }
