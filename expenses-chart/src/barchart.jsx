@@ -1,4 +1,24 @@
-import { Bar } from "react-chartjs-2";
+import React from 'react';
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Bar } from 'react-chartjs-2';
+
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  BarElement,
+  Title,
+  Tooltip,
+  Legend
+);
 
 
 const beneficios = [17.45, 34.91, 52.36, 31.07, 23.39, 43.28, 25.48];
@@ -33,6 +53,6 @@ const chartOptions = {
     }
 }
 
-export default function Bars() {
+export default function ChartBars() {
     return <Bar data = {chartData} options={chartOptions}/>
 }

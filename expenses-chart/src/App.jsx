@@ -1,4 +1,5 @@
-import './App.css'
+import ChartBars from './barchart.jsx';
+import './App.css';
 
 
 
@@ -18,7 +19,7 @@ function App() {
       <article>
         <h1>Spending-Last 7 days</h1>
        <div className='chart'>
-        
+        <ChartBars/>
        </div>
         <footer>
         <div className='total'>
